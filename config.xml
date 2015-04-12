@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.spappsecuador.seth" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Seth</name>
+<widget id="com.spaceappsec.seth" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Farmer Seth</name>
   <description>
-      Mobile application to register crop problems
+	Application
     </description>
   <author email="ivan.campana@gmail.com" href="http://domo.ec/">
-      Iván Campaña
+      Ionic Framework Team
     </author>
   <content src="index.html"/>
   <access origin="*"/>
