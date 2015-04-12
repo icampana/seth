@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>SETH #CropAl</title>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" media="screen" />
+
+</head>
+<body>
+
+{% if user.is_authenticated %}
+<p><a href="/admin/">ENTER SITE</a></p>
+{% else %}
+<p><a href="/admin/login">LOGIN</a></p>
+<p><a href="/accounts/register/">REGISTER</a></p>
+{% endif %}
+
+</body>
+</html>
