@@ -1,0 +1,45 @@
+<ion-view view-title="Register incident">
+  <ion-content>
+    <form ng-submit=''>
+      <div class='list'>
+        
+        <div class="item item-input padding-right">
+                <span class="input-label">Crop Picture</span>
+                <button type='button' class="button button-balanced left-margin" ng-click='getPhoto()'>
+                        <i class='icon ion-camera'></i>
+                </button>
+        </div>
+        <div class="item item-input padding-right" ng-show="cropPhoto">
+                <img ng-src='{{cropPhoto}}' width='220' border='1' />
+        </div>
+        
+        <div class="item item-input padding-right">
+                <span class="input-label">Geo Location</span>
+                <button type='button' class="button button-balanced right-margin" ng-click='updateGPS()'>
+                        <i class='icon ion-android-locate'></i>
+                </button>
+                <span class='gps_location'>{{gps_position}}</span>
+        </div>
+        
+        <div class="item item-input item-select">
+          <span class="input-label">Crop type</span>
+          
+          <select name='cropType' ng-model='cropType'>
+            <option ng-repeat='crop in cropList' value='{{crop.id}}'>{{crop.name}}</option>
+          </select>
+          
+        </div>
+        
+        <div class="item item-input item-select">
+          <span class="input-label">Plague</span>
+          
+          <select name='cropPlague' ng-model='cropPlague'>
+            <option ng-repeat='plague in plagueList' value='{{plague.id}}'>{{plague.name}}</option>
+          </select>
+          
+        </div>
+        
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

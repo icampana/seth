@@ -1,0 +1,22 @@
+<ion-view view-title="Dashboard">
+  <ion-content>
+    <div>
+      <button ng-click='addCrop()' class='button button-icon icon-left ion-plus-circled balanced'>
+        Add crop
+      </button>
+      
+      <button ng-click='reportIncident()' class='button button-icon icon-left ion-alert-circled assertive'>
+        Report incident
+      </button>
+    </div>
+<div class="list">
+
+  <a class="item item-icon-left" href="#" ng-repeat='crop in crops'>
+    <i class="icon ion-leaf assertive"></i>
+    {{crop.name}}
+  </a>
+  
+</div>
+    
+  </ion-content>
+</ion-view>
